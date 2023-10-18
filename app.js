@@ -124,7 +124,7 @@ var whatsappLink = "https://api.whatsapp.com/send?phone=919000000000&text=Order%
 
 function updateWhatsappLink() {
   for (let i = 0; i < items.length; i++) {
-    if (items.quantity != 0) {
+    if (items[i].quantity != 0) {
       whatsappLink += items[i].name + "%20" + items[i].quantity;
     }
   }
